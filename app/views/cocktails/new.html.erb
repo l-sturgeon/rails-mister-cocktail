@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Welcome to Cocktail creation</h1>
+  <p>Please enter the name of your cocktail</p>
+</div>
+
+<div class="container">
+  <%= simple_form_for [ @cocktails] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<br>
+<div class="container">
+  <img src="https://cf.ltkcdn.net/cocktails/images/std/251453-675x450-non-alcoholic-cocktails.jpg" alt="cocktails" class="rounded">
+</div>
+
